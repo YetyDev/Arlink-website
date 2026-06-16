@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - AirLinks</title>
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="service.css">
+</head>
+
+<body>
+
+    <!-- Header / Navigation Bar -->
+    <header id="main-header">
+        <a href="index.html" class="logo-container">
+            <img src="images/logo.png" alt="AirLinks Logo" id="header-logo">
+        </a>
+        <nav id="nav-menu">
+            <a href="index.html#home">Home</a>
+            <a href="about.html">About</a>
+            <a href="service.html" class="active">Services</a>
+            <a href="explore.html">Explore Flight</a>
+            <a href="index.html#blog">Travel</a>
+            <a href="index.html#contact">Engagement</a>
+        </nav>
+        <div class="nav-actions">
+            <button class="icon-btn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button class="icon-btn" aria-label="Language"><i class="fa-solid fa-globe"></i></button>
+            <a href="index.html#register" class="btn btn-primary" id="header-register-btn">Contact Us</a>
+            <button class="mobile-menu-toggle" id="menu-toggle-btn" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="menu-overlay" id="menu-overlay"></div>
+
+    <!-- Services Hero Section -->
+    <section class="service-hero">
+        <div class="service-hero-content">
+            <span class="service-hero-tag">
+                <i class="fa-solid fa-circle" style="font-size: 8px; color: var(--primary-red); margin-right: 8px;"></i>
+                Our Services
+            </span>
+            <h1>Travel Solutions<br><span class="highlight-red">Designed Around You</span></h1>
+            <p>From departures to arrivals, our comprehensive travel services are designed to save you time, reduce
+                stress, and ensure a smooth journey everywhere.</p>
+        </div>
+    </section>
+
+    <!-- Core Services Section -->
+    <section class="core-services-section">
+        <div class="services-title-wrapper">
+            <span class="services-tag">Our Core Services</span>
+        </div>
+
+        <div class="services-block-container">
+            <!-- Service 1: Flight Booking -->
+            <div class="service-block-row" id="flight-booking">
+                <div class="service-block-img-box">
+                    <img src="images/7839e8b4d562c15a8f62d6b174cba984.jpg" alt="Flight Booking"
+                        class="service-block-img">
+                </div>
+                <div class="service-block-text-box">
+                    <h3>Flight Booking</h3>
+                    <h4>Find The Best Routes At The Best Prices</h4>
+                    <p>Enjoy seamless flight booking options with access to top international and domestic airlines. Our
+                        team is available 24/7 to handle flight changes and cancellations.</p>
+                    <div class="service-features-list-wrapper">
+                        <h5>What you Get</h5>
+                        <ul class="service-features-list">
+                            <li><i class="fa-solid fa-check"></i> Custom travel itineraries</li>
+                            <li><i class="fa-solid fa-check"></i> Real-time flight notifications</li>
+                            <li><i class="fa-solid fa-check"></i> Mobile boarding pass assistance</li>
+                            <li><i class="fa-solid fa-check"></i> Best price guarantee</li>
+                        </ul>
+                    </div>
+                    <a href="index.html#register" class="btn btn-primary service-cta-btn">Book Now</a>
+                </div>
+            </div>
+
+            <!-- Service 2: Hotel Reservations -->
+            <div class="service-block-row row-reverse" id="hotel-reservations">
+                <div class="service-block-img-box">
+                    <img src="images/e7be194d434ef6e446ad64626b9a0276.jpg" alt="Hotel Reservations"
+                        class="service-block-img">
+                </div>
+                <div class="service-block-text-box">
+                    <h3>Hotel Reservations</h3>
+                    <h4>Comfortable Stays Wherever You Go</h4>
+                    <p>Whether you're looking for luxury hotels, boutique stays, or budget accommodations, we secure
+                        reservations that suit your preferences and budget.</p>
+                    <div class="service-features-list-wrapper">
+                        <h5>Benefits</h5>
+                        <ul class="service-features-list">
+                            <li><i class="fa-solid fa-check"></i> Handpicked properties</li>
+                            <li><i class="fa-solid fa-check"></i> Flexible cancellation policies</li>
+                            <li><i class="fa-solid fa-check"></i> Exclusive member discounts</li>
+                            <li><i class="fa-solid fa-check"></i> 24/7 guest support</li>
+                        </ul>
+                    </div>
+                    <a href="index.html#register" class="btn btn-primary service-cta-btn">Book Stay</a>
+                </div>
+            </div>
+
+            <!-- Service 3: Travel Insurance -->
+            <div class="service-block-row" id="travel-insurance">
+                <div class="service-block-img-box">
+                    <img src="images/488d546d69613897fbd91a3ec61d5c72.jpg" alt="Travel Insurance"
+                        class="service-block-img">
+                </div>
+                <div class="service-block-text-box">
+                    <h3>Travel Insurance</h3>
+                    <h4>Travel With Peace Of Mind</h4>
+                    <p>Protect your trip against unexpected events. Our comprehensive travel insurance plans cover
+                        medical emergencies, trip cancellations, lost baggage, and travel delays.</p>
+                    <div class="service-features-list-wrapper">
+                        <h5>Coverage Options</h5>
+                        <ul class="service-features-list">
+                            <li><i class="fa-solid fa-check"></i> Emergency medical expenses</li>
+                            <li><i class="fa-solid fa-check"></i> Trip interruption protection</li>
+                            <li><i class="fa-solid fa-check"></i> Baggage loss and delay coverage</li>
+                            <li><i class="fa-solid fa-check"></i> 24/7 travel helpline support</li>
+                        </ul>
+                    </div>
+                    <a href="index.html#register" class="btn btn-primary service-cta-btn">Get Quote</a>
+                </div>
+            </div>
+
+            <!-- Service 4: Airport Transfers -->
+            <div class="service-block-row row-reverse" id="airport-transfers">
+                <div class="service-block-img-box">
+                    <img src="images/d4f2e3fa759091f84b4c8f98df2dc9d0.jpg" alt="Airport Transfers"
+                        class="service-block-img">
+                </div>
+                <div class="service-block-text-box">
+                    <h3>Airport Transfers</h3>
+                    <h4>Reliable Transportation At Every Destination</h4>
+                    <p>Enjoy a stress-free transition from the airport to your destination. We provide reliable,
+                        air-conditioned transfer services with professional drivers.</p>
+                    <div class="service-features-list-wrapper">
+                        <h5>Features</h5>
+                        <ul class="service-features-list">
+                            <li><i class="fa-solid fa-check"></i> Meet and greet service</li>
+                            <li><i class="fa-solid fa-check"></i> Punctuality guaranteed</li>
+                            <li><i class="fa-solid fa-check"></i> Clean, comfortable vehicles</li>
+                            <li><i class="fa-solid fa-check"></i> Fixed pricing, no hidden fees</li>
+                        </ul>
+                    </div>
+                    <a href="index.html#register" class="btn btn-primary service-cta-btn">Book Transfer</a>
+                </div>
+            </div>
+
+            <!-- Service 5: Holiday Packages -->
+            <div class="service-block-row" id="holiday-packages">
+                <div class="service-block-img-box">
+                    <img src="images/026badc72f15f795f5246011b20dedb3.jpg" alt="Holiday Packages"
+                        class="service-block-img">
+                </div>
+                <div class="service-block-text-box">
+                    <h3>Holiday Packages</h3>
+                    <h4>Curated Experiences for Every Traveler</h4>
+                    <p>Discover the world with our fully customized travel packages. We handle accommodation,
+                        transportation, tours, and activities, tailored to your exact desires.</p>
+                    <div class="service-features-list-wrapper">
+                        <h5>Package Types</h5>
+                        <ul class="service-features-list">
+                            <li><i class="fa-solid fa-check"></i> Family vacations</li>
+                            <li><i class="fa-solid fa-check"></i> Romantic getaways</li>
+                            <li><i class="fa-solid fa-check"></i> Adventure tours</li>
+                            <li><i class="fa-solid fa-check"></i> Corporate retreats</li>
+                            <li><i class="fa-solid fa-check"></i> Custom group tours</li>
+                        </ul>
+                    </div>
+                    <a href="index.html#register" class="btn btn-primary service-cta-btn">Explore Packages</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose ARLink28 Section -->
+    <section class="service-why-choose-section">
+        <div class="why-choose-header">
+            <h2>Why Choose <span class="highlight-red">ARLink28</span></h2>
+        </div>
+        <div class="why-choose-grid">
+            <!-- Card 1 -->
+            <div class="why-card glass-panel">
+                <i class="fa-solid fa-headset why-card-icon"></i>
+                <h4>24/7 Support</h4>
+                <p>Dedicated customer support team available round-the-clock.</p>
+            </div>
+            <!-- Card 2 -->
+            <div class="why-card glass-panel">
+                <i class="fa-solid fa-shield-halved why-card-icon"></i>
+                <h4>Secure Booking</h4>
+                <p>Advanced encryption to protect your transaction data.</p>
+            </div>
+            <!-- Card 3 -->
+            <div class="why-card glass-panel">
+                <i class="fa-solid fa-sliders why-card-icon"></i>
+                <h4>Tailored Solutions</h4>
+                <p>Custom itineraries matching your budget and lifestyle.</p>
+            </div>
+            <!-- Card 4 -->
+            <div class="why-card glass-panel">
+                <i class="fa-solid fa-handshake why-card-icon"></i>
+                <h4>Trusted Partners</h4>
+                <p>Flight options only from reputable and vetted partners.</p>
+            </div>
+            <!-- Card 5 -->
+            <div class="why-card glass-panel">
+                <i class="fa-solid fa-tags why-card-icon"></i>
+                <h4>Best Price Guarantee</h4>
+                <p>Unbeatable rates and deals for every destination.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ready For Next Adventure CTA -->
+    <section class="cta-adventure">
+        <div class="cta-banner">
+            <div class="cta-content">
+                <h2>Ready For Your <br>Next Adventure?</h2>
+                <p>Search, compare, and book flights at the best rates. Affordable travel, trusted airlines. Search
+                    flights now!</p>
+                <a href="index.html#home" class="btn btn-primary">Book Flight Tickets <i
+                        class="fa-solid fa-plane"></i></a>
+            </div>
+            <div class="cta-visual">
+                <img src="images/IMG_5238.png" alt="AirLinks Airplane Flight" class="cta-plane">
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Bar -->
+    <section class="newsletter-bar" id="register">
+        <div class="newsletter-container">
+            <div class="newsletter-info">
+                <i class="fa-regular fa-envelope-open newsletter-icon"></i>
+                <div class="newsletter-text">
+                    <h4>Stay updated with our latest offers</h4>
+                    <p>Subscribe to get our regular updates, special flight pricing, and promotional offers.</p>
+                </div>
+            </div>
+            <div class="newsletter-form-container">
+                <form class="newsletter-form" onsubmit="event.preventDefault();">
+                    <input type="email" placeholder="Enter your email address" required
+                        aria-label="Email for newsletter">
+                    <button type="submit">Subscribe</button>
+                </form>
+                <div class="newsletter-agree">
+                    <input type="checkbox" id="newsletter-check" required>
+                    <label for="newsletter-check">I agree to terms & privacy policy</label>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <a href="index.html" class="logo-container">
+                    <img src="images/logo.png" alt="AirLinks Logo" style="height: 35px;">
+                </a>
+                <p>Connecting you to the world with affordable, premium flights. Fly safely, travel comfortably.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-icon" aria-label="Linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon" aria-label="Youtube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="explore.html">Explore Flight</a></li>
+                    <li><a href="index.html#blog">Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h5>Popular Routes</h5>
+                <ul>
+                    <li><a href="index.html#destinations">Abuja Route</a></li>
+                    <li><a href="index.html#destinations">Lagos Route</a></li>
+                    <li><a href="index.html#destinations">Port Harcourt</a></li>
+                    <li><a href="index.html#destinations">Kano Route</a></li>
+                    <li><a href="index.html#destinations">London Route</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h5>Services</h5>
+                <ul>
+                    <li><a href="service.html#flight-booking">Flight Booking</a></li>
+                    <li><a href="service.html#hotel-reservations">Hotel Booking</a></li>
+                    <li><a href="service.html#travel-insurance">Travel Insurance</a></li>
+                    <li><a href="service.html#airport-transfers">Airport Transfers</a></li>
+                    <li><a href="service.html#holiday-packages">Holiday Packages</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h5>Support</h5>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col" style="grid-column: span 1;">
+                <h5>Contact Us</h5>
+                <ul class="contact-info">
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+234 800 123 4567</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>support@airlinks.com</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Airport Road, Ikeja, Lagos, Nigeria</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 AirLinks. All rights reserved.</p>
+            <p>Designed with excellence for a seamless traveler experience.</p>
+        </div>
+    </footer>
+
+    <!-- Header scroll and mobile menu drawer logic -->
+    <script>
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('main-header');
+            if (window.scrollY > 50) {
+                header.classList.add('sticky');
+            } else {
+                header.classList.remove('sticky');
+            }
+        });
+
+        // Mobile Navigation Drawer Toggle
+        const menuToggleBtn = document.getElementById('menu-toggle-btn');
+        const navMenu = document.getElementById('nav-menu');
+        const menuOverlay = document.getElementById('menu-overlay');
+
+        if (menuToggleBtn && navMenu && menuOverlay) {
+            const toggleMenu = () => {
+                navMenu.classList.toggle('active');
+                menuOverlay.classList.toggle('active');
+
+                const icon = menuToggleBtn.querySelector('i');
+                if (icon.classList.contains('fa-bars')) {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-xmark');
+                } else {
+                    icon.classList.remove('fa-xmark');
+                    icon.classList.add('fa-bars');
+                }
+            };
+
+            menuToggleBtn.addEventListener('click', toggleMenu);
+            menuOverlay.addEventListener('click', toggleMenu);
+
+            // Close menu if a link is clicked
+            navMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navMenu.classList.remove('active');
+                    menuOverlay.classList.remove('active');
+                    const icon = menuToggleBtn.querySelector('i');
+                    if (icon) {
+                        icon.classList.remove('fa-xmark');
+                        icon.classList.add('fa-bars');
+                    }
+                });
+            });
+        }
+    </script>
+</body>
+
+</html>
