@@ -1,0 +1,265 @@
+/* ============================================================
+   ARLink Global Animation System
+   Shared across index.html, about.html, service.html, explore.html
+   ============================================================ */
+
+/* ── Page Load Fade-In ───────────────────────────────────── */
+@keyframes pageFadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+body {
+    animation: pageFadeIn 0.5s ease forwards;
+}
+
+/* ── Core Keyframes ──────────────────────────────────────── */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.88);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes shimmer {
+    0%   { background-position: -200% center; }
+    100% { background-position: 200% center; }
+}
+
+@keyframes pulseRing {
+    0%   { box-shadow: 0 0 0 0 rgba(230, 30, 43, 0.35); }
+    70%  { box-shadow: 0 0 0 12px rgba(230, 30, 43, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(230, 30, 43, 0); }
+}
+
+@keyframes floatY {
+    0%, 100% { transform: translateY(0px); }
+    50%       { transform: translateY(-10px); }
+}
+
+/* ── Scroll-Reveal Base State ────────────────────────────── */
+/* Elements with .reveal start hidden and animate in when .visible is added by JS */
+.reveal {
+    opacity: 0;
+    transform: translateY(38px);
+    transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+                transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: opacity, transform;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Directional variants */
+.reveal-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1),
+                transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.reveal-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1),
+                transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.reveal-scale {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.65s cubic-bezier(0.22, 1, 0.36, 1),
+                transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal-scale.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* ── Stagger Delays ──────────────────────────────────────── */
+.reveal-delay-1  { transition-delay: 0.05s; }
+.reveal-delay-2  { transition-delay: 0.12s; }
+.reveal-delay-3  { transition-delay: 0.19s; }
+.reveal-delay-4  { transition-delay: 0.26s; }
+.reveal-delay-5  { transition-delay: 0.33s; }
+.reveal-delay-6  { transition-delay: 0.40s; }
+.reveal-delay-7  { transition-delay: 0.47s; }
+.reveal-delay-8  { transition-delay: 0.54s; }
+.reveal-delay-9  { transition-delay: 0.61s; }
+.reveal-delay-10 { transition-delay: 0.68s; }
+
+/* ── Hero Entrance Animations ────────────────────────────── */
+/* Applied directly to hero elements — fire on page load */
+.hero-tag-entrance {
+    animation: slideInDown 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.2s both;
+}
+
+.hero-h1-entrance {
+    animation: fadeInUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.4s both;
+}
+
+.hero-p-entrance {
+    animation: fadeInUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.6s both;
+}
+
+.hero-btn-entrance {
+    animation: fadeInUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.8s both;
+}
+
+.hero-visual-entrance {
+    animation: fadeInScale 1.1s cubic-bezier(0.22, 1, 0.36, 1) 0.5s both;
+}
+
+.hero-widget-entrance {
+    animation: fadeInUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) 1.0s both;
+}
+
+/* ── Section Header Reveal Enhancement ───────────────────── */
+.section-header .section-tag,
+.section-header .why-choose-badge {
+    display: inline-flex;
+}
+
+/* ── Stat Counter Element ─────────────────────────────────── */
+/* The actual number element that gets counted up */
+.stat-counter {
+    display: inline-block;
+    transition: none;
+}
+
+/* ── Hover Micro-animations ──────────────────────────────── */
+/* Pulse ring on primary CTAs */
+.btn-primary:focus,
+.btn-primary:active {
+    animation: pulseRing 0.6s ease-out;
+}
+
+/* Float on hero visual */
+.hero-visual .hero-map {
+    animation: pulseGlow 4s infinite ease-in-out, floatY 6s ease-in-out infinite;
+}
+
+/* Enhanced card hover lift with glow trail */
+.feature-card,
+.service-card-new,
+.featured-travel-card,
+.testimonial-card,
+.destination-card,
+.why-card {
+    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+                box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+                border-color 0.35s ease,
+                background 0.35s ease !important;
+}
+
+/* ── Section Divider Line Animation ──────────────────────── */
+.section-divider-line {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(230, 30, 43, 0.5), transparent);
+    animation: shimmer 3s infinite linear;
+    background-size: 200% auto;
+}
+
+/* ── Typewriter cursor for hero tag ─────────────────────── */
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0; }
+}
+
+/* ── Reduce motion support ───────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+    .reveal,
+    .reveal-left,
+    .reveal-right,
+    .reveal-scale {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+
+    .hero-tag-entrance,
+    .hero-h1-entrance,
+    .hero-p-entrance,
+    .hero-btn-entrance,
+    .hero-visual-entrance,
+    .hero-widget-entrance {
+        animation: none;
+        opacity: 1;
+    }
+
+    body {
+        animation: none;
+    }
+}

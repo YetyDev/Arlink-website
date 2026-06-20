@@ -23,6 +23,13 @@
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Anchor offset: compensate for sticky header height */
+#home, #features, #destinations, #services, #blog, #contact,
+#about, #flight-booking, #hotel-reservations, #travel-insurance,
+#airport-transfers, #holiday-packages, #register {
+    scroll-margin-top: 80px;
+}
+
 /* Reset & Base Styles */
 * {
     margin: 0;

@@ -4,12 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services - AirLinks</title>
+    <title>Services - ARLinks</title>
+    <meta name="description" content="Explore ARLinks travel services — flight booking, hotel reservations, visa assistance, travel insurance, airport transfers, and curated holiday packages.">
     <!-- FontAwesome for Premium Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="service.css">
+    <link rel="stylesheet" href="animations.css">
 </head>
 
 <body>
@@ -17,20 +19,20 @@
     <!-- Header / Navigation Bar -->
     <header id="main-header">
         <a href="index.html" class="logo-container">
-            <img src="images/logo.png" alt="AirLinks Logo" id="header-logo">
+            <img src="images/logo.png" alt="ARLinks Logo" id="header-logo">
         </a>
         <nav id="nav-menu">
-            <a href="index.html#home">Home</a>
+            <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="service.html" class="active">Services</a>
-            <a href="explore.html">Explore Flight</a>
-            <a href="index.html#blog">Travel</a>
-            <a href="index.html#contact">Engagement</a>
+            <a href="explore.html">Travel</a>
+            <a href="opportunities.html">Opportunities</a>
+            <a href="engagement.html">Engagement</a>
         </nav>
         <div class="nav-actions">
             <button class="icon-btn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
             <button class="icon-btn" aria-label="Language"><i class="fa-solid fa-globe"></i></button>
-            <a href="index.html#register" class="btn btn-primary" id="header-register-btn">Contact Us</a>
+            <a href="contact.html" class="btn btn-primary" id="header-register-btn">Contact Us</a>
             <button class="mobile-menu-toggle" id="menu-toggle-btn" aria-label="Toggle Menu">
                 <i class="fa-solid fa-bars"></i>
             </button>
@@ -43,25 +45,25 @@
     <!-- Services Hero Section -->
     <section class="service-hero">
         <div class="service-hero-content">
-            <span class="service-hero-tag">
+            <span class="service-hero-tag hero-tag-entrance">
                 <i class="fa-solid fa-circle" style="font-size: 8px; color: var(--primary-red); margin-right: 8px;"></i>
                 Our Services
             </span>
-            <h1>Travel Solutions<br><span class="highlight-red">Designed Around You</span></h1>
-            <p>From departures to arrivals, our comprehensive travel services are designed to save you time, reduce
+            <h1 class="hero-h1-entrance">Travel Solutions<br><span class="highlight-red">Designed Around You</span></h1>
+            <p class="hero-p-entrance">From departures to arrivals, our comprehensive travel services are designed to save you time, reduce
                 stress, and ensure a smooth journey everywhere.</p>
         </div>
     </section>
 
     <!-- Core Services Section -->
     <section class="core-services-section">
-        <div class="services-title-wrapper">
+        <div class="services-title-wrapper reveal">
             <span class="services-tag">Our Core Services</span>
         </div>
 
         <div class="services-block-container">
             <!-- Service 1: Flight Booking -->
-            <div class="service-block-row" id="flight-booking">
+            <div class="service-block-row reveal-left" id="flight-booking">
                 <div class="service-block-img-box">
                     <img src="images/7839e8b4d562c15a8f62d6b174cba984.jpg" alt="Flight Booking"
                         class="service-block-img">
@@ -85,7 +87,7 @@
             </div>
 
             <!-- Service 2: Hotel Reservations -->
-            <div class="service-block-row row-reverse" id="hotel-reservations">
+            <div class="service-block-row row-reverse reveal-right" id="hotel-reservations">
                 <div class="service-block-img-box">
                     <img src="images/e7be194d434ef6e446ad64626b9a0276.jpg" alt="Hotel Reservations"
                         class="service-block-img">
@@ -109,7 +111,7 @@
             </div>
 
             <!-- Service 3: Travel Insurance -->
-            <div class="service-block-row" id="travel-insurance">
+            <div class="service-block-row reveal-left" id="travel-insurance">
                 <div class="service-block-img-box">
                     <img src="images/488d546d69613897fbd91a3ec61d5c72.jpg" alt="Travel Insurance"
                         class="service-block-img">
@@ -133,7 +135,7 @@
             </div>
 
             <!-- Service 4: Airport Transfers -->
-            <div class="service-block-row row-reverse" id="airport-transfers">
+            <div class="service-block-row row-reverse reveal-right" id="airport-transfers">
                 <div class="service-block-img-box">
                     <img src="images/d4f2e3fa759091f84b4c8f98df2dc9d0.jpg" alt="Airport Transfers"
                         class="service-block-img">
@@ -157,7 +159,7 @@
             </div>
 
             <!-- Service 5: Holiday Packages -->
-            <div class="service-block-row" id="holiday-packages">
+            <div class="service-block-row reveal-left" id="holiday-packages">
                 <div class="service-block-img-box">
                     <img src="images/026badc72f15f795f5246011b20dedb3.jpg" alt="Holiday Packages"
                         class="service-block-img">
@@ -185,36 +187,36 @@
 
     <!-- Why Choose ARLink28 Section -->
     <section class="service-why-choose-section">
-        <div class="why-choose-header">
+        <div class="why-choose-header reveal">
             <h2>Why Choose <span class="highlight-red">ARLink28</span></h2>
         </div>
         <div class="why-choose-grid">
             <!-- Card 1 -->
-            <div class="why-card glass-panel">
+            <div class="why-card glass-panel reveal">
                 <i class="fa-solid fa-headset why-card-icon"></i>
                 <h4>24/7 Support</h4>
                 <p>Dedicated customer support team available round-the-clock.</p>
             </div>
             <!-- Card 2 -->
-            <div class="why-card glass-panel">
+            <div class="why-card glass-panel reveal">
                 <i class="fa-solid fa-shield-halved why-card-icon"></i>
                 <h4>Secure Booking</h4>
                 <p>Advanced encryption to protect your transaction data.</p>
             </div>
             <!-- Card 3 -->
-            <div class="why-card glass-panel">
+            <div class="why-card glass-panel reveal">
                 <i class="fa-solid fa-sliders why-card-icon"></i>
                 <h4>Tailored Solutions</h4>
                 <p>Custom itineraries matching your budget and lifestyle.</p>
             </div>
             <!-- Card 4 -->
-            <div class="why-card glass-panel">
+            <div class="why-card glass-panel reveal">
                 <i class="fa-solid fa-handshake why-card-icon"></i>
                 <h4>Trusted Partners</h4>
                 <p>Flight options only from reputable and vetted partners.</p>
             </div>
             <!-- Card 5 -->
-            <div class="why-card glass-panel">
+            <div class="why-card glass-panel reveal">
                 <i class="fa-solid fa-tags why-card-icon"></i>
                 <h4>Best Price Guarantee</h4>
                 <p>Unbeatable rates and deals for every destination.</p>
@@ -224,16 +226,16 @@
 
     <!-- Ready For Next Adventure CTA -->
     <section class="cta-adventure">
-        <div class="cta-banner">
+        <div class="cta-banner reveal-scale">
             <div class="cta-content">
                 <h2>Ready For Your <br>Next Adventure?</h2>
                 <p>Search, compare, and book flights at the best rates. Affordable travel, trusted airlines. Search
                     flights now!</p>
-                <a href="index.html#home" class="btn btn-primary">Book Flight Tickets <i
+                <a href="index.html" class="btn btn-primary">Book Flight Tickets <i
                         class="fa-solid fa-plane"></i></a>
             </div>
             <div class="cta-visual">
-                <img src="images/IMG_5238.png" alt="AirLinks Airplane Flight" class="cta-plane">
+                <img src="images/IMG_5238.png" alt="ARLinks Airplane Flight" class="cta-plane">
             </div>
         </div>
     </section>
@@ -241,14 +243,14 @@
     <!-- Newsletter Bar -->
     <section class="newsletter-bar" id="register">
         <div class="newsletter-container">
-            <div class="newsletter-info">
+            <div class="newsletter-info reveal-left">
                 <i class="fa-regular fa-envelope-open newsletter-icon"></i>
                 <div class="newsletter-text">
                     <h4>Stay updated with our latest offers</h4>
                     <p>Subscribe to get our regular updates, special flight pricing, and promotional offers.</p>
                 </div>
             </div>
-            <div class="newsletter-form-container">
+            <div class="newsletter-form-container reveal-right">
                 <form class="newsletter-form" onsubmit="event.preventDefault();">
                     <input type="email" placeholder="Enter your email address" required
                         aria-label="Email for newsletter">
@@ -256,7 +258,7 @@
                 </form>
                 <div class="newsletter-agree">
                     <input type="checkbox" id="newsletter-check" required>
-                    <label for="newsletter-check">I agree to terms & privacy policy</label>
+                    <label for="newsletter-check">I agree to terms &amp; privacy policy</label>
                 </div>
             </div>
         </div>
@@ -267,7 +269,7 @@
         <div class="footer-top">
             <div class="footer-brand">
                 <a href="index.html" class="logo-container">
-                    <img src="images/logo.png" alt="AirLinks Logo" style="height: 35px;">
+                    <img src="images/logo.png" alt="ARLinks Logo" style="height: 35px;">
                 </a>
                 <p>Connecting you to the world with affordable, premium flights. Fly safely, travel comfortably.</p>
                 <div class="social-links">
@@ -282,22 +284,21 @@
             <div class="footer-col">
                 <h5>Quick Links</h5>
                 <ul>
-                    <li><a href="index.html#home">Home</a></li>
-                    <li><a href="service.html">Services</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="explore.html">Explore Flight</a></li>
-                    <li><a href="index.html#blog">Blog</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="explore.html">Travel</a></li>
+                    <li><a href="opportunities.html">Opportunities</a></li>
+                    <li><a href="engagement.html">Engagement</a></li>
                 </ul>
             </div>
 
             <div class="footer-col">
-                <h5>Popular Routes</h5>
+                <h5>Opportunities</h5>
                 <ul>
-                    <li><a href="index.html#destinations">Abuja Route</a></li>
-                    <li><a href="index.html#destinations">Lagos Route</a></li>
-                    <li><a href="index.html#destinations">Port Harcourt</a></li>
-                    <li><a href="index.html#destinations">Kano Route</a></li>
-                    <li><a href="index.html#destinations">London Route</a></li>
+                    <li><a href="opportunities.html#careers">Careers</a></li>
+                    <li><a href="opportunities.html#invest">Investor Relations</a></li>
+                    <li><a href="opportunities.html#partnerships">Partnerships</a></li>
                 </ul>
             </div>
 
@@ -315,8 +316,8 @@
             <div class="footer-col">
                 <h5>Support</h5>
                 <ul>
-                    <li><a href="#">Help Center</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="contact.html#faq">Help &amp; FAQs</a></li>
                     <li><a href="#">Terms of Service</a></li>
                     <li><a href="#">Privacy Policy</a></li>
                 </ul>
@@ -331,7 +332,7 @@
                     </li>
                     <li>
                         <i class="fa-solid fa-envelope"></i>
-                        <span>support@airlinks.com</span>
+                        <span>support@arlinks.com</span>
                     </li>
                     <li>
                         <i class="fa-solid fa-location-dot"></i>
@@ -342,59 +343,13 @@
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; 2026 AirLinks. All rights reserved.</p>
+            <p>&copy; 2026 ARLinks. All rights reserved.</p>
             <p>Designed with excellence for a seamless traveler experience.</p>
         </div>
     </footer>
 
-    <!-- Header scroll and mobile menu drawer logic -->
-    <script>
-        window.addEventListener('scroll', () => {
-            const header = document.getElementById('main-header');
-            if (window.scrollY > 50) {
-                header.classList.add('sticky');
-            } else {
-                header.classList.remove('sticky');
-            }
-        });
-
-        // Mobile Navigation Drawer Toggle
-        const menuToggleBtn = document.getElementById('menu-toggle-btn');
-        const navMenu = document.getElementById('nav-menu');
-        const menuOverlay = document.getElementById('menu-overlay');
-
-        if (menuToggleBtn && navMenu && menuOverlay) {
-            const toggleMenu = () => {
-                navMenu.classList.toggle('active');
-                menuOverlay.classList.toggle('active');
-
-                const icon = menuToggleBtn.querySelector('i');
-                if (icon.classList.contains('fa-bars')) {
-                    icon.classList.remove('fa-bars');
-                    icon.classList.add('fa-xmark');
-                } else {
-                    icon.classList.remove('fa-xmark');
-                    icon.classList.add('fa-bars');
-                }
-            };
-
-            menuToggleBtn.addEventListener('click', toggleMenu);
-            menuOverlay.addEventListener('click', toggleMenu);
-
-            // Close menu if a link is clicked
-            navMenu.querySelectorAll('a').forEach(link => {
-                link.addEventListener('click', () => {
-                    navMenu.classList.remove('active');
-                    menuOverlay.classList.remove('active');
-                    const icon = menuToggleBtn.querySelector('i');
-                    if (icon) {
-                        icon.classList.remove('fa-xmark');
-                        icon.classList.add('fa-bars');
-                    }
-                });
-            });
-        }
-    </script>
+    <!-- Animation Engine -->
+    <script src="animations.js"></script>
 </body>
 
 </html>

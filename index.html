@@ -4,12 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AirLinks - We Connect Every Journey</title>
+    <title>ARLinks - We Connect Every Journey</title>
+    <meta name="description" content="Book affordable flights across Africa and internationally. ARLinks connects you to top destinations with trusted airlines, flexible options, and 24/7 support.">
     <!-- FontAwesome for Premium Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="animations.css">
 </head>
 
 <body>
@@ -17,20 +19,20 @@
     <!-- Header / Navigation Bar -->
     <header id="main-header">
         <a href="index.html" class="logo-container">
-            <img src="images/logo.png" alt="AirLinks Logo" id="header-logo">
+            <img src="images/logo.png" alt="ARLinks Logo" id="header-logo">
         </a>
         <nav id="nav-menu">
-            <a href="#home" class="active">Home</a>
+            <a href="index.html" class="active">Home</a>
             <a href="about.html">About</a>
             <a href="service.html">Services</a>
-            <a href="explore.html">Explore Flight</a>
-            <a href="#blog">Travel</a>
-            <a href="#contact">Engagement</a>
+            <a href="explore.html">Travel</a>
+            <a href="opportunities.html">Opportunities</a>
+            <a href="engagement.html">Engagement</a>
         </nav>
         <div class="nav-actions">
             <button class="icon-btn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
             <button class="icon-btn" aria-label="Language"><i class="fa-solid fa-globe"></i></button>
-            <a href="#register" class="btn btn-primary" id="header-register-btn">Contact Us</a>
+            <a href="contact.html" class="btn btn-primary" id="header-register-btn">Contact Us</a>
             <button class="mobile-menu-toggle" id="menu-toggle-btn" aria-label="Toggle Menu">
                 <i class="fa-solid fa-bars"></i>
             </button>
@@ -42,27 +44,26 @@
 
     <!-- Hero Section -->
     <section class="hero" id="home">
-        <!-- Sun sunset overlay and map network overlay -->
 
         <div class="hero-main">
             <div class="hero-content">
-                <span class="section-tag">WITHIN AFRICA</span>
-                <h1>WE CONNECT <br><span class="highlight-red">EVERY JOURNEY.</span></h1>
-                <p>Flight tickets to domestic and international flights at cheap prices. Where do you want to go?</p>
-                <a href="#register" class="btn btn-primary">Book Flight <i class="fa-solid fa-plane"></i></a>
+                <span class="section-tag hero-tag-entrance">WITHIN AFRICA & BEYOND</span>
+                <h1 class="hero-h1-entrance">WE CONNECT <br><span class="highlight-red">EVERY JOURNEY.</span></h1>
+                <p class="hero-p-entrance">Flight tickets to domestic and international flights at cheap prices. Where do you want to go?</p>
+                <a href="#register" class="btn btn-primary hero-btn-entrance">Book Flight <i class="fa-solid fa-plane"></i></a>
             </div>
-            <div class="hero-visual">
-                <img src="images/HERO.png" alt="AirLinks Africa Route Map" class="hero-map">
+            <div class="hero-visual hero-visual-entrance">
+                <img src="images/HERO.png" alt="ARLinks Africa Route Map" class="hero-map">
             </div>
         </div>
 
         <!-- Booking Widget Panel -->
-        <div class="booking-widget glass-panel">
+        <div class="booking-widget glass-panel hero-widget-entrance">
             <div class="booking-tabs">
                 <button class="tab-btn active" data-tab="flight"><i class="fa-solid fa-plane"></i> Flight</button>
                 <button class="tab-btn" data-tab="hotel"><i class="fa-solid fa-hotel"></i> Hotel Reservation</button>
-                <button class="tab-btn" data-tab="car"><i class="fa-solid fa-plane"></i> Holiday Package</button>
-                <button class="tab-btn" data-tab="taxi"><i class="fa-solid fa-visa"></i> Visa Support</button>
+                <button class="tab-btn" data-tab="car"><i class="fa-solid fa-umbrella-beach"></i> Holiday Package</button>
+                <button class="tab-btn" data-tab="taxi"><i class="fa-solid fa-passport"></i> Visa Support</button>
             </div>
 
             <form class="booking-form" onsubmit="event.preventDefault();">
@@ -74,7 +75,9 @@
                             <option value="LOS">Lagos (LOS)</option>
                             <option value="ABV">Abuja (ABV)</option>
                             <option value="PHC">Port Harcourt (PHC)</option>
+                            <option value="KAN">Kano (KAN)</option>
                             <option value="LHR">London (LHR)</option>
+                            <option value="DXB">Dubai (DXB)</option>
                         </select>
                         <i class="fa-solid fa-plane-departure"
                             style="position: absolute; right: 12px; top: 15px; color: var(--text-muted); pointer-events: none;"></i>
@@ -88,7 +91,13 @@
                             <option value="LOS">Lagos (LOS)</option>
                             <option value="ABV">Abuja (ABV)</option>
                             <option value="PHC">Port Harcourt (PHC)</option>
+                            <option value="KAN">Kano (KAN)</option>
                             <option value="LHR">London (LHR)</option>
+                            <option value="DXB">Dubai (DXB)</option>
+                            <option value="CDG">Paris (CDG)</option>
+                            <option value="JFK">New York (JFK)</option>
+                            <option value="NBO">Nairobi (NBO)</option>
+                            <option value="CPT">Cape Town (CPT)</option>
                         </select>
                         <i class="fa-solid fa-plane-arrival"
                             style="position: absolute; right: 12px; top: 15px; color: var(--text-muted); pointer-events: none;"></i>
@@ -149,7 +158,7 @@
 
         <!-- Trust Badges Row -->
         <div class="hero-badges-row">
-            <div class="hero-badge-card">
+            <div class="hero-badge-card reveal reveal-delay-1">
                 <div class="hero-badge-icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
                         stroke-linejoin="round">
@@ -161,7 +170,7 @@
                     Trusted Travel<br>Expert
                 </div>
             </div>
-            <div class="hero-badge-card">
+            <div class="hero-badge-card reveal reveal-delay-2">
                 <div class="hero-badge-icon">
                     <i class="fa-solid fa-globe"></i>
                 </div>
@@ -169,7 +178,7 @@
                     Global<br>Partnerships
                 </div>
             </div>
-            <div class="hero-badge-card">
+            <div class="hero-badge-card reveal reveal-delay-3">
                 <div class="hero-badge-icon">
                     <i class="fa-solid fa-location-dot"></i>
                 </div>
@@ -177,7 +186,7 @@
                     Opportunities<br>across Africa
                 </div>
             </div>
-            <div class="hero-badge-card">
+            <div class="hero-badge-card reveal reveal-delay-4">
                 <div class="hero-badge-icon">
                     <i class="fa-solid fa-headset"></i>
                 </div>
@@ -188,9 +197,9 @@
         </div>
     </section>
 
-    <!-- Why Choose AirLinks Section -->
+    <!-- Why Choose ARLinks Section -->
     <section class="why-choose-us" id="features">
-        <div class="section-header">
+        <div class="section-header reveal">
             <span class="why-choose-badge">Why Choose ARLink28 <i class="fa-solid fa-plane"></i></span>
             <h2>Your <span class="highlight-red">Journey</span> Starts Here</h2>
             <p>Whether you're traveling for business, family visits, education, tourism, or special occasions, ARLink28
@@ -200,7 +209,7 @@
         </div>
 
         <div class="features-grid">
-            <div class="feature-card glass-panel">
+            <div class="feature-card glass-panel reveal">
                 <div class="feature-icon-wrapper">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
@@ -213,7 +222,7 @@
                 <h3>Find the Best Flight Deals</h3>
                 <p>Compare routes and fares from trusted airlines to secure the best value for your trip.</p>
             </div>
-            <div class="feature-card glass-panel">
+            <div class="feature-card glass-panel reveal">
                 <div class="feature-icon-wrapper">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
@@ -232,7 +241,7 @@
                 <h3>Flexible Travel Options</h3>
                 <p>Choose from one-way, round-trip, and multi-city bookings tailored to your travel needs.</p>
             </div>
-            <div class="feature-card glass-panel">
+            <div class="feature-card glass-panel reveal">
                 <div class="feature-icon-wrapper">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
@@ -242,7 +251,7 @@
                 <h3>Secure Payments</h3>
                 <p>Book with confidence using safe and reliable payment options.</p>
             </div>
-            <div class="feature-card glass-panel">
+            <div class="feature-card glass-panel reveal">
                 <div class="feature-icon-wrapper">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
@@ -262,18 +271,18 @@
     <!-- Popular Destinations Section -->
     <section class="popular-destinations" id="destinations">
         <div class="destination-header-row">
-            <div class="section-header">
+            <div class="section-header reveal">
                 <span class="section-tag">Top Destinations</span>
                 <h2>Popular Destination</h2>
                 <p>Connect immediately to major business centers and leisure gateways. Here are our top-rated flight
                     routes.</p>
             </div>
-            <a href="#destinations" class="btn btn-secondary">View All Destinations</a>
+            <a href="explore.html" class="btn btn-secondary reveal">View All Destinations</a>
         </div>
 
         <!-- 10 Destination Cards Grid -->
         <div class="destinations-grid">
-            <div class="destination-card">
+            <div class="destination-card reveal">
                 <img src="images/0beb3e04fca00b01c6d5ee27858785f2.jpg" alt="Abuja" class="destination-img">
                 <div class="destination-overlay">
                     <div class="destination-pin"><i class="fa-solid fa-location-dot"></i></div>
@@ -281,7 +290,7 @@
                     <span class="book-now-link">Book Now <i class="fa-solid fa-chevron-right"></i></span>
                 </div>
             </div>
-            <div class="destination-card">
+            <div class="destination-card reveal">
                 <img src="images/11a45865c24a53fcd5b730276d1ea975.jpg" alt="Lagos" class="destination-img">
                 <div class="destination-overlay">
                     <div class="destination-pin"><i class="fa-solid fa-location-dot"></i></div>
@@ -289,7 +298,7 @@
                     <span class="book-now-link">Book Now <i class="fa-solid fa-chevron-right"></i></span>
                 </div>
             </div>
-            <div class="destination-card">
+            <div class="destination-card reveal">
                 <img src="images/IMG_5235.png" alt="Port Harcourt" class="destination-img">
                 <div class="destination-overlay">
                     <div class="destination-pin"><i class="fa-solid fa-location-dot"></i></div>
@@ -297,7 +306,7 @@
                     <span class="book-now-link">Book Now <i class="fa-solid fa-chevron-right"></i></span>
                 </div>
             </div>
-            <div class="destination-card">
+            <div class="destination-card reveal">
                 <img src="images/gini2.png" alt="Kano" class="destination-img">
                 <div class="destination-overlay">
                     <div class="destination-pin"><i class="fa-solid fa-location-dot"></i></div>
@@ -305,7 +314,7 @@
                     <span class="book-now-link">Book Now <i class="fa-solid fa-chevron-right"></i></span>
                 </div>
             </div>
-            <div class="destination-card">
+            <div class="destination-card reveal">
                 <img src="images/IMG_5236.png" alt="London" class="destination-img">
                 <div class="destination-overlay">
                     <div class="destination-pin"><i class="fa-solid fa-location-dot"></i></div>
@@ -313,40 +322,40 @@
                     <span class="book-now-link">Book Now <i class="fa-solid fa-chevron-right"></i></span>
                 </div>
             </div>
-            <div class="destination-card">
-                <img src="images/7839e8b4d562c15a8f62d6b174cba984.jpg" alt="Checkin" class="destination-img">
+            <div class="destination-card reveal">
+                <img src="images/7839e8b4d562c15a8f62d6b174cba984.jpg" alt="Paris" class="destination-img">
                 <div class="destination-overlay">
                     <div class="destination-pin"><i class="fa-solid fa-location-dot"></i></div>
                     <h4>Flight to Paris (CDG)</h4>
                     <span class="book-now-link">Book Now <i class="fa-solid fa-chevron-right"></i></span>
                 </div>
             </div>
-            <div class="destination-card">
-                <img src="images/e7be194d434ef6e446ad64626b9a0276.jpg" alt="Hotel room" class="destination-img">
+            <div class="destination-card reveal">
+                <img src="images/e7be194d434ef6e446ad64626b9a0276.jpg" alt="New York" class="destination-img">
                 <div class="destination-overlay">
                     <div class="destination-pin"><i class="fa-solid fa-location-dot"></i></div>
                     <h4>Flight to New York (JFK)</h4>
                     <span class="book-now-link">Book Now <i class="fa-solid fa-chevron-right"></i></span>
                 </div>
             </div>
-            <div class="destination-card">
-                <img src="images/488d546d69613897fbd91a3ec61d5c72.jpg" alt="Male Traveler" class="destination-img">
+            <div class="destination-card reveal">
+                <img src="images/488d546d69613897fbd91a3ec61d5c72.jpg" alt="Dubai" class="destination-img">
                 <div class="destination-overlay">
                     <div class="destination-pin"><i class="fa-solid fa-location-dot"></i></div>
                     <h4>Flight to Dubai (DXB)</h4>
                     <span class="book-now-link">Book Now <i class="fa-solid fa-chevron-right"></i></span>
                 </div>
             </div>
-            <div class="destination-card">
-                <img src="images/d4f2e3fa759091f84b4c8f98df2dc9d0.jpg" alt="Female Traveler" class="destination-img">
+            <div class="destination-card reveal">
+                <img src="images/d4f2e3fa759091f84b4c8f98df2dc9d0.jpg" alt="Nairobi" class="destination-img">
                 <div class="destination-overlay">
                     <div class="destination-pin"><i class="fa-solid fa-location-dot"></i></div>
                     <h4>Flight to Nairobi (NBO)</h4>
                     <span class="book-now-link">Book Now <i class="fa-solid fa-chevron-right"></i></span>
                 </div>
             </div>
-            <div class="destination-card">
-                <img src="images/026badc72f15f795f5246011b20dedb3.jpg" alt="Booking Relax" class="destination-img">
+            <div class="destination-card reveal">
+                <img src="images/026badc72f15f795f5246011b20dedb3.jpg" alt="Cape Town" class="destination-img">
                 <div class="destination-overlay">
                     <div class="destination-pin"><i class="fa-solid fa-location-dot"></i></div>
                     <h4>Flight to Cape Town (CPT)</h4>
@@ -358,7 +367,7 @@
 
     <!-- Our Travel Services Section -->
     <section class="our-services-section" id="services">
-        <div class="section-header">
+        <div class="section-header reveal">
             <span class="section-tag">Our Services</span>
             <h2>Our Travel Services</h2>
             <p>Everything you need for a smooth and unforgettable journey</p>
@@ -366,80 +375,80 @@
 
         <div class="services-grid-new">
             <!-- Card 1: Flight Booking -->
-            <div class="service-card-new glass-panel">
+            <div class="service-card-new glass-panel reveal">
                 <div class="service-icon-wrapper-new">
                     <i class="fa-solid fa-plane"></i>
                 </div>
                 <h3>Flight Booking</h3>
                 <p>Quick and reliable ticket booking across domestic and international routes.</p>
-                <a href="about.html" class="service-learn-more">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="service.html#flight-booking" class="service-learn-more">Learn More <i class="fa-solid fa-arrow-right"></i></a>
             </div>
 
             <!-- Card 2: Hotel Reservation -->
-            <div class="service-card-new glass-panel">
+            <div class="service-card-new glass-panel reveal">
                 <div class="service-icon-wrapper-new">
                     <i class="fa-solid fa-hotel"></i>
                 </div>
                 <h3>Hotel Reservation</h3>
                 <p>Comfortable and hand-picked accommodations wherever your flight takes you.</p>
-                <a href="about.html" class="service-learn-more">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="service.html#hotel-reservations" class="service-learn-more">Learn More <i class="fa-solid fa-arrow-right"></i></a>
             </div>
 
             <!-- Card 3: Visa Assistance -->
-            <div class="service-card-new glass-panel">
+            <div class="service-card-new glass-panel reveal">
                 <div class="service-icon-wrapper-new">
                     <i class="fa-solid fa-passport"></i>
                 </div>
                 <h3>Visa Assistance</h3>
                 <p>Seamless visa guidance and documentation support for global travel.</p>
-                <a href="about.html" class="service-learn-more">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="service.html" class="service-learn-more">Learn More <i class="fa-solid fa-arrow-right"></i></a>
             </div>
 
             <!-- Card 4: Travel Insurance -->
-            <div class="service-card-new glass-panel">
+            <div class="service-card-new glass-panel reveal">
                 <div class="service-icon-wrapper-new">
                     <i class="fa-solid fa-shield-halved"></i>
                 </div>
                 <h3>Travel Insurance</h3>
                 <p>Secure travel protection plans covering medical emergencies and flight changes.</p>
-                <a href="about.html" class="service-learn-more">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="service.html#travel-insurance" class="service-learn-more">Learn More <i class="fa-solid fa-arrow-right"></i></a>
             </div>
 
             <!-- Card 5: Airport Transfer -->
-            <div class="service-card-new glass-panel">
+            <div class="service-card-new glass-panel reveal">
                 <div class="service-icon-wrapper-new">
                     <i class="fa-solid fa-car"></i>
                 </div>
                 <h3>Airport Transfer</h3>
                 <p>Convenient airport pick-up and drop-off services for a stress-free transition.</p>
-                <a href="about.html" class="service-learn-more">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="service.html#airport-transfers" class="service-learn-more">Learn More <i class="fa-solid fa-arrow-right"></i></a>
             </div>
 
             <!-- Card 6: Holiday Packages -->
-            <div class="service-card-new glass-panel">
+            <div class="service-card-new glass-panel reveal">
                 <div class="service-icon-wrapper-new">
                     <i class="fa-solid fa-umbrella-beach"></i>
                 </div>
                 <h3>Holiday Packages</h3>
                 <p>Curated tour packages and vacation deals designed for unforgettable experiences.</p>
-                <a href="about.html" class="service-learn-more">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="service.html#holiday-packages" class="service-learn-more">Learn More <i class="fa-solid fa-arrow-right"></i></a>
             </div>
         </div>
 
         <!-- Featured Travel Subsection -->
         <div class="featured-travel-container">
             <div class="featured-travel-header-row">
-                <div class="section-header" style="text-align: left; margin: 0; max-width: 600px;">
+                <div class="section-header reveal" style="text-align: left; margin: 0; max-width: 600px;">
                     <span class="section-tag">Featured Travel</span>
                     <h2>Popular Holiday Packages</h2>
                     <p>Explore our most popular travel experiences and curated tour packages around the world.</p>
                 </div>
-                <a href="about.html" class="btn btn-secondary">Explore All Packages</a>
+                <a href="service.html#holiday-packages" class="btn btn-secondary reveal">Explore All Packages</a>
             </div>
 
             <div class="featured-travel-grid">
                 <!-- Card 1: Nairobi Safari -->
-                <div class="featured-travel-card">
+                <div class="featured-travel-card reveal">
                     <div class="featured-travel-img-wrapper">
                         <img src="images/d4f2e3fa759091f84b4c8f98df2dc9d0.jpg" alt="Nairobi Safari"
                             class="featured-travel-img">
@@ -452,14 +461,14 @@
                             <div class="featured-travel-price">
                                 <span>From</span> $620
                             </div>
-                            <a href="about.html" class="featured-travel-btn">Explore now <i
+                            <a href="service.html#holiday-packages" class="featured-travel-btn">Explore now <i
                                     class="fa-solid fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Card 2: Dubai Escape -->
-                <div class="featured-travel-card">
+                <div class="featured-travel-card reveal">
                     <div class="featured-travel-img-wrapper">
                         <img src="images/488d546d69613897fbd91a3ec61d5c72.jpg" alt="Dubai Escape"
                             class="featured-travel-img">
@@ -472,14 +481,14 @@
                             <div class="featured-travel-price">
                                 <span>From</span> $540
                             </div>
-                            <a href="about.html" class="featured-travel-btn">Explore now <i
+                            <a href="service.html#holiday-packages" class="featured-travel-btn">Explore now <i
                                     class="fa-solid fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Card 3: Paris Romance -->
-                <div class="featured-travel-card">
+                <div class="featured-travel-card reveal">
                     <div class="featured-travel-img-wrapper">
                         <img src="images/7839e8b4d562c15a8f62d6b174cba984.jpg" alt="Paris Romance"
                             class="featured-travel-img">
@@ -492,14 +501,14 @@
                             <div class="featured-travel-price">
                                 <span>From</span> $780
                             </div>
-                            <a href="about.html" class="featured-travel-btn">Explore now <i
+                            <a href="service.html#holiday-packages" class="featured-travel-btn">Explore now <i
                                     class="fa-solid fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Card 4: London Heritage -->
-                <div class="featured-travel-card">
+                <div class="featured-travel-card reveal">
                     <div class="featured-travel-img-wrapper">
                         <img src="images/IMG_5236.png" alt="London Heritage" class="featured-travel-img">
                         <span class="featured-travel-duration">5 Days / 4 Nights</span>
@@ -511,22 +520,23 @@
                             <div class="featured-travel-price">
                                 <span>From</span> $690
                             </div>
-                            <a href="about.html" class="featured-travel-btn">Explore now <i
+                            <a href="service.html#holiday-packages" class="featured-travel-btn">Explore now <i
                                     class="fa-solid fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
         <!-- Part C: Stats Capsule -->
-        <div class="stats-capsule-container">
+        <div class="stats-capsule-container reveal">
             <div class="stats-capsule-row">
                 <div class="capsule-stat-item">
                     <div class="capsule-icon-box">
                         <i class="fa-regular fa-user"></i>
                     </div>
                     <div class="capsule-stat-content">
-                        <div class="capsule-stat-num">50,000+</div>
+                        <div class="capsule-stat-num" data-target="50,000+">50,000+</div>
                         <div class="capsule-stat-lbl">Flight Bookings</div>
                     </div>
                 </div>
@@ -536,7 +546,7 @@
                         <i class="fa-solid fa-plane"></i>
                     </div>
                     <div class="capsule-stat-content">
-                        <div class="capsule-stat-num">100+</div>
+                        <div class="capsule-stat-num" data-target="100+">100+</div>
                         <div class="capsule-stat-lbl">Air partners</div>
                     </div>
                 </div>
@@ -546,7 +556,7 @@
                         <i class="fa-solid fa-globe"></i>
                     </div>
                     <div class="capsule-stat-content">
-                        <div class="capsule-stat-num">30+</div>
+                        <div class="capsule-stat-num" data-target="30+">30+</div>
                         <div class="capsule-stat-lbl">Countries cover</div>
                     </div>
                 </div>
@@ -556,7 +566,7 @@
                         <i class="fa-regular fa-thumbs-up"></i>
                     </div>
                     <div class="capsule-stat-content">
-                        <div class="capsule-stat-num">90%</div>
+                        <div class="capsule-stat-num" data-target="90%">90%</div>
                         <div class="capsule-stat-lbl">Customer satisfaction</div>
                     </div>
                 </div>
@@ -568,7 +578,7 @@
 
     <!-- Testimonials Section -->
     <section class="testimonials" id="blog">
-        <div class="section-header">
+        <div class="section-header reveal">
             <span class="section-tag">Testimonials</span>
             <h2>What our <span class="highlight-red">Travelers</span> Say</h2>
             <p>Read about the flight reservation and customer service journeys of our verified passengers across
@@ -578,11 +588,11 @@
 
         <div class="testimonials-grid">
             <!-- Testimonial 1 -->
-            <div class="testimonial-card glass-panel">
+            <div class="testimonial-card glass-panel reveal">
                 <div class="testimonial-avatar">
                     <img src="images/071c01cbad5ab7965667ff2e9ef5765c.jpg" alt="Sarah Adams">
                 </div>
-                <p class="testimonial-text">"AirLinks completely overhauled how I manage flight bookings for my
+                <p class="testimonial-text">"ARLinks completely overhauled how I manage flight bookings for my
                     corporate team. Booking is instant, scheduling checks are accurate, and support resolves
                     adjustments
                     immediately."</p>
@@ -601,7 +611,7 @@
                 </div>
             </div>
             <!-- Testimonial 2 -->
-            <div class="testimonial-card glass-panel">
+            <div class="testimonial-card glass-panel reveal">
                 <div class="testimonial-avatar">
                     <img src="images/026badc72f15f795f5246011b20dedb3.jpg" alt="David Miller">
                 </div>
@@ -623,7 +633,7 @@
                 </div>
             </div>
             <!-- Testimonial 3 -->
-            <div class="testimonial-card glass-panel">
+            <div class="testimonial-card glass-panel reveal">
                 <div class="testimonial-avatar">
                     <img src="images/488d546d69613897fbd91a3ec61d5c72.jpg" alt="Emmanuel Cole">
                 </div>
@@ -651,7 +661,7 @@
 
     <!-- CTA Ready For Next Adventure Section -->
     <section class="cta-adventure">
-        <div class="cta-banner">
+        <div class="cta-banner reveal-scale">
             <div class="cta-content">
                 <h2>Ready For Your <br>Next Adventure?</h2>
                 <p>Search, compare, and book flights at the best rates. Affordable travel, trusted airlines. Search
@@ -659,7 +669,7 @@
                 <a href="#home" class="btn btn-primary">Find Flight Tickets <i class="fa-solid fa-plane"></i></a>
             </div>
             <div class="cta-visual">
-                <img src="images/IMG_5238.png" alt="AirLinks Airplane Flight" class="cta-plane">
+                <img src="images/IMG_5238.png" alt="ARLinks Airplane Flight" class="cta-plane">
             </div>
         </div>
     </section>
@@ -667,14 +677,14 @@
     <!-- Newsletter Bar -->
     <section class="newsletter-bar" id="register">
         <div class="newsletter-container">
-            <div class="newsletter-info">
+            <div class="newsletter-info reveal-left">
                 <i class="fa-regular fa-envelope-open newsletter-icon"></i>
                 <div class="newsletter-text">
                     <h4>Stay updated with our latest news</h4>
                     <p>Subscribe to get our regular updates, special flight pricing, and promotional offers.</p>
                 </div>
             </div>
-            <div class="newsletter-form-container">
+            <div class="newsletter-form-container reveal-right">
                 <form class="newsletter-form" onsubmit="event.preventDefault();">
                     <input type="email" placeholder="Enter your email address" required
                         aria-label="Email for newsletter">
@@ -682,7 +692,7 @@
                 </form>
                 <div class="newsletter-agree">
                     <input type="checkbox" id="newsletter-check" required>
-                    <label for="newsletter-check">I agree to terms & privacy policy</label>
+                    <label for="newsletter-check">I agree to terms &amp; privacy policy</label>
                 </div>
             </div>
         </div>
@@ -693,7 +703,7 @@
         <div class="footer-top">
             <div class="footer-brand">
                 <a href="index.html" class="logo-container">
-                    <img src="images/logo.png" alt="AirLinks Logo" style="height: 35px;">
+                    <img src="images/logo.png" alt="ARLinks Logo" style="height: 35px;">
                 </a>
                 <p>Connecting you to the world with affordable, premium flights. Fly safely, travel comfortably.</p>
                 <div class="social-links">
@@ -708,22 +718,21 @@
             <div class="footer-col">
                 <h5>Quick Links</h5>
                 <ul>
-                    <li><a href="index.html#home">Home</a></li>
-                    <li><a href="service.html">Services</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="explore.html">Explore Flight</a></li>
-                    <li><a href="index.html#blog">Blog</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="explore.html">Travel</a></li>
+                    <li><a href="opportunities.html">Opportunities</a></li>
+                    <li><a href="engagement.html">Engagement</a></li>
                 </ul>
             </div>
 
             <div class="footer-col">
-                <h5>Popular Routes</h5>
+                <h5>Opportunities</h5>
                 <ul>
-                    <li><a href="index.html#destinations">Abuja Route</a></li>
-                    <li><a href="index.html#destinations">Lagos Route</a></li>
-                    <li><a href="index.html#destinations">Port Harcourt</a></li>
-                    <li><a href="index.html#destinations">Kano Route</a></li>
-                    <li><a href="index.html#destinations">London Route</a></li>
+                    <li><a href="opportunities.html#careers">Careers</a></li>
+                    <li><a href="opportunities.html#invest">Investor Relations</a></li>
+                    <li><a href="opportunities.html#partnerships">Partnerships</a></li>
                 </ul>
             </div>
 
@@ -741,8 +750,8 @@
             <div class="footer-col">
                 <h5>Support</h5>
                 <ul>
-                    <li><a href="#">Help Center</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="contact.html#faq">Help &amp; FAQs</a></li>
                     <li><a href="#">Terms of Service</a></li>
                     <li><a href="#">Privacy Policy</a></li>
                 </ul>
@@ -757,7 +766,7 @@
                     </li>
                     <li>
                         <i class="fa-solid fa-envelope"></i>
-                        <span>support@airlinks.com</span>
+                        <span>support@arlinks.com</span>
                     </li>
                     <li>
                         <i class="fa-solid fa-location-dot"></i>
@@ -768,68 +777,13 @@
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; 2026 AirLinks. All rights reserved.</p>
+            <p>&copy; 2026 ARLinks. All rights reserved.</p>
             <p>Designed with excellence for a seamless traveler experience.</p>
         </div>
     </footer>
 
-    <!-- Simple sticky header effect, tab selection, and mobile menu logic -->
-    <script>
-        window.addEventListener('scroll', () => {
-            const header = document.getElementById('main-header');
-            if (window.scrollY > 50) {
-                header.classList.add('sticky');
-            } else {
-                header.classList.remove('sticky');
-            }
-        });
-
-        // Booking widget tabs
-        const tabBtns = document.querySelectorAll('.tab-btn');
-        tabBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                tabBtns.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-            });
-        });
-
-        // Mobile Navigation Drawer Toggle
-        const menuToggleBtn = document.getElementById('menu-toggle-btn');
-        const navMenu = document.getElementById('nav-menu');
-        const menuOverlay = document.getElementById('menu-overlay');
-
-        if (menuToggleBtn && navMenu && menuOverlay) {
-            const toggleMenu = () => {
-                navMenu.classList.toggle('active');
-                menuOverlay.classList.toggle('active');
-
-                const icon = menuToggleBtn.querySelector('i');
-                if (icon.classList.contains('fa-bars')) {
-                    icon.classList.remove('fa-bars');
-                    icon.classList.add('fa-xmark');
-                } else {
-                    icon.classList.remove('fa-xmark');
-                    icon.classList.add('fa-bars');
-                }
-            };
-
-            menuToggleBtn.addEventListener('click', toggleMenu);
-            menuOverlay.addEventListener('click', toggleMenu);
-
-            // Close menu if a link is clicked
-            navMenu.querySelectorAll('a').forEach(link => {
-                link.addEventListener('click', () => {
-                    navMenu.classList.remove('active');
-                    menuOverlay.classList.remove('active');
-                    const icon = menuToggleBtn.querySelector('i');
-                    if (icon) {
-                        icon.classList.remove('fa-xmark');
-                        icon.classList.add('fa-bars');
-                    }
-                });
-            });
-        }
-    </script>
+    <!-- Animation Engine -->
+    <script src="animations.js"></script>
 </body>
 
 </html>

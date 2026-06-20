@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - ARLinks</title>
+    <meta name="description" content="Get in touch with ARLink28. Reach out for flight bookings, partnership enquiries, careers, investor relations, or general support.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="pages.css">
+    <link rel="stylesheet" href="animations.css">
+</head>
+
+<body>
+
+    <header id="main-header">
+        <a href="index.html" class="logo-container">
+            <img src="images/logo.png" alt="ARLinks Logo" id="header-logo">
+        </a>
+        <nav id="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="service.html">Services</a>
+            <a href="explore.html">Travel</a>
+            <a href="opportunities.html">Opportunities</a>
+            <a href="engagement.html">Engagement</a>
+        </nav>
+        <div class="nav-actions">
+            <button class="icon-btn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button class="icon-btn" aria-label="Language"><i class="fa-solid fa-globe"></i></button>
+            <a href="contact.html" class="btn btn-primary active" id="header-register-btn">Contact Us</a>
+            <button class="mobile-menu-toggle" id="menu-toggle-btn" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <div class="menu-overlay" id="menu-overlay"></div>
+
+    <!-- Hero -->
+    <section class="page-hero contact-hero">
+        <div class="page-hero-content">
+            <span class="page-hero-tag hero-tag-entrance">
+                <i class="fa-solid fa-circle" style="font-size:8px;color:var(--primary-red);margin-right:8px;"></i>
+                We're Here To Help
+            </span>
+            <h1 class="hero-h1-entrance">Get In <span class="highlight-red">Touch With Us</span></h1>
+            <p class="hero-p-entrance">Whether you need help with a booking, have a business inquiry, want to explore a partnership, or simply want to say hello — we'd love to hear from you.</p>
+            <div class="contact-quick-links hero-btn-entrance">
+                <a href="#form" class="contact-quick-btn">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Send Message</span>
+                </a>
+                <a href="tel:+2348001234567" class="contact-quick-btn">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>Call Us</span>
+                </a>
+                <a href="mailto:support@arlinks.com" class="contact-quick-btn">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info Cards -->
+    <section class="contact-info-section">
+        <div class="contact-info-grid">
+            <div class="contact-info-card glass-panel reveal">
+                <div class="cinfo-icon"><i class="fa-solid fa-phone"></i></div>
+                <h3>Phone</h3>
+                <p>Our support team is available Mon–Sat, 8am–8pm WAT</p>
+                <a href="tel:+2348001234567" class="cinfo-link">+234 800 123 4567</a>
+                <a href="tel:+441234567890" class="cinfo-link">+44 12 3456 7890</a>
+            </div>
+            <div class="contact-info-card glass-panel reveal">
+                <div class="cinfo-icon"><i class="fa-solid fa-envelope"></i></div>
+                <h3>Email</h3>
+                <p>Send us an email and we'll respond within 24 hours on business days</p>
+                <a href="mailto:support@arlinks.com" class="cinfo-link">support@arlinks.com</a>
+                <a href="mailto:partnerships@arlinks.com" class="cinfo-link">partnerships@arlinks.com</a>
+            </div>
+            <div class="contact-info-card glass-panel reveal">
+                <div class="cinfo-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <h3>Offices</h3>
+                <p>We operate from two locations</p>
+                <span class="cinfo-link">Airport Road, Ikeja, Lagos, Nigeria</span>
+                <span class="cinfo-link">Canary Wharf, London, UK</span>
+            </div>
+            <div class="contact-info-card glass-panel reveal">
+                <div class="cinfo-icon"><i class="fa-solid fa-headset"></i></div>
+                <h3>Live Support</h3>
+                <p>Available 24/7 for urgent flight-related queries</p>
+                <a href="#form" class="cinfo-link">Start Live Chat</a>
+                <a href="mailto:urgent@arlinks.com" class="cinfo-link">urgent@arlinks.com</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form + Details -->
+    <section class="contact-main-section" id="form">
+        <div class="contact-main-container">
+
+            <!-- Left: Form -->
+            <div class="contact-form-panel glass-panel reveal-left">
+                <div class="contact-form-header">
+                    <h2>Send Us a Message</h2>
+                    <p>Fill in the form and our team will get back to you within 24 hours.</p>
+                </div>
+
+                <!-- Enquiry Type Tabs -->
+                <div class="enquiry-tabs">
+                    <button class="enquiry-tab active" data-enquiry="general">General</button>
+                    <button class="enquiry-tab" data-enquiry="booking">Booking Help</button>
+                    <button class="enquiry-tab" data-enquiry="partnership">Partnership</button>
+                    <button class="enquiry-tab" data-enquiry="career">Career</button>
+                    <button class="enquiry-tab" data-enquiry="investor">Investor</button>
+                </div>
+
+                <form class="contact-form" id="contact-form" onsubmit="handleFormSubmit(event)">
+                    <input type="hidden" id="enquiry-type" name="enquiry_type" value="general">
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="first-name">First Name *</label>
+                            <input type="text" id="first-name" name="first_name" placeholder="John" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">Last Name *</label>
+                            <input type="text" id="last-name" name="last_name" placeholder="Doe" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-email">Email Address *</label>
+                        <input type="email" id="contact-email" name="email" placeholder="you@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-phone">Phone Number</label>
+                        <input type="tel" id="contact-phone" name="phone" placeholder="+234 800 000 0000">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-subject">Subject *</label>
+                        <input type="text" id="contact-subject" name="subject" placeholder="How can we help you?" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-message">Message *</label>
+                        <textarea id="contact-message" name="message" rows="5" placeholder="Tell us more about your enquiry..." required></textarea>
+                    </div>
+
+                    <div class="form-group form-checkbox-row">
+                        <input type="checkbox" id="form-consent" required>
+                        <label for="form-consent">I agree to the <a href="#">privacy policy</a> and consent to being contacted regarding my enquiry.</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary contact-submit-btn">
+                        <span id="submit-text">Send Message</span>
+                        <i class="fa-solid fa-paper-plane" id="submit-icon"></i>
+                    </button>
+
+                    <div class="form-success-msg" id="form-success" style="display:none;">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <div>
+                            <strong>Message sent!</strong>
+                            <p>Thank you for reaching out. We'll get back to you within 24 hours.</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Right: Details & Social -->
+            <div class="contact-side-panel reveal-right">
+                <!-- Office Hours -->
+                <div class="contact-side-card glass-panel">
+                    <h3><i class="fa-solid fa-clock" style="color:var(--primary-red);margin-right:10px;"></i>Office Hours</h3>
+                    <div class="hours-list">
+                        <div class="hours-row">
+                            <span>Monday – Friday</span>
+                            <span>08:00 – 20:00 WAT</span>
+                        </div>
+                        <div class="hours-row">
+                            <span>Saturday</span>
+                            <span>09:00 – 18:00 WAT</span>
+                        </div>
+                        <div class="hours-row">
+                            <span>Sunday</span>
+                            <span>Urgent Support Only</span>
+                        </div>
+                        <div class="hours-row highlight">
+                            <span>24/7 Emergency Line</span>
+                            <span class="hours-green">Always Active</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Response Times -->
+                <div class="contact-side-card glass-panel">
+                    <h3><i class="fa-solid fa-bolt" style="color:var(--primary-red);margin-right:10px;"></i>Response Times</h3>
+                    <div class="response-list">
+                        <div class="response-item">
+                            <div class="response-bar" style="--fill:95%"></div>
+                            <div class="response-label">
+                                <span>General Enquiries</span>
+                                <span>Within 24h</span>
+                            </div>
+                        </div>
+                        <div class="response-item">
+                            <div class="response-bar" style="--fill:100%"></div>
+                            <div class="response-label">
+                                <span>Booking Support</span>
+                                <span>Within 2h</span>
+                            </div>
+                        </div>
+                        <div class="response-item">
+                            <div class="response-bar" style="--fill:80%"></div>
+                            <div class="response-label">
+                                <span>Partnership</span>
+                                <span>Within 48h</span>
+                            </div>
+                        </div>
+                        <div class="response-item">
+                            <div class="response-bar" style="--fill:70%"></div>
+                            <div class="response-label">
+                                <span>Investor Deck</span>
+                                <span>Within 72h</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social -->
+                <div class="contact-side-card glass-panel">
+                    <h3><i class="fa-solid fa-share-nodes" style="color:var(--primary-red);margin-right:10px;"></i>Follow ARLink28</h3>
+                    <div class="contact-socials">
+                        <a href="#" class="contact-social-btn"><i class="fa-brands fa-instagram"></i><span>Instagram</span></a>
+                        <a href="#" class="contact-social-btn"><i class="fa-brands fa-twitter"></i><span>Twitter / X</span></a>
+                        <a href="#" class="contact-social-btn"><i class="fa-brands fa-linkedin"></i><span>LinkedIn</span></a>
+                        <a href="#" class="contact-social-btn"><i class="fa-brands fa-facebook"></i><span>Facebook</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="opp-section" id="faq">
+        <div class="section-header reveal">
+            <span class="section-tag">FAQs</span>
+            <h2>Frequently Asked <span class="highlight-red">Questions</span></h2>
+            <p>Quick answers to the most common questions we receive.</p>
+        </div>
+
+        <div class="faq-list">
+            <div class="faq-item glass-panel reveal">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    <span>How do I book a flight with ARLinks?</span>
+                    <i class="fa-solid fa-chevron-down faq-icon"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>You can book directly through our homepage booking widget. Select your departure, destination, date, and seat type, then click "Search Flight." Our team will confirm your booking and send ticket details to your email within minutes.</p>
+                </div>
+            </div>
+            <div class="faq-item glass-panel reveal">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    <span>Can I change or cancel my booking?</span>
+                    <i class="fa-solid fa-chevron-down faq-icon"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes. Contact our support team via phone or email with your booking reference. Changes and cancellations are subject to the airline's individual policy. Our team will guide you through the process and any applicable fees.</p>
+                </div>
+            </div>
+            <div class="faq-item glass-panel reveal">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    <span>How do I apply for a career opportunity?</span>
+                    <i class="fa-solid fa-chevron-down faq-icon"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Visit our <a href="opportunities.html#careers">Opportunities page</a> to see current openings. Click "Apply Now" on your preferred role and fill in the contact form specifying the role. We aim to respond to all applications within 5 business days.</p>
+                </div>
+            </div>
+            <div class="faq-item glass-panel reveal">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    <span>How can I invest in or partner with ARLink28?</span>
+                    <i class="fa-solid fa-chevron-down faq-icon"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Use the contact form above selecting "Investor" or "Partnership" as your enquiry type, or email us at partnerships@arlinks.com. We'll arrange a private briefing and share our investor deck within 72 hours of your enquiry.</p>
+                </div>
+            </div>
+            <div class="faq-item glass-panel reveal">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    <span>Does ARLinks offer group booking discounts?</span>
+                    <i class="fa-solid fa-chevron-down faq-icon"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes. For groups of 10 or more passengers, we offer preferential pricing and dedicated booking support. Contact our team directly and we'll prepare a tailored group quote within 24 hours.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-bar" id="newsletter">
+        <div class="newsletter-container">
+            <div class="newsletter-info reveal-left">
+                <i class="fa-regular fa-envelope-open newsletter-icon"></i>
+                <div class="newsletter-text">
+                    <h4>Stay updated with our latest news</h4>
+                    <p>Subscribe to get regular updates, special pricing, and news from ARLink28.</p>
+                </div>
+            </div>
+            <div class="newsletter-form-container reveal-right">
+                <form class="newsletter-form" onsubmit="event.preventDefault();">
+                    <input type="email" placeholder="Enter your email address" required aria-label="Email">
+                    <button type="submit">Subscribe</button>
+                </form>
+                <div class="newsletter-agree">
+                    <input type="checkbox" id="newsletter-check" required>
+                    <label for="newsletter-check">I agree to terms &amp; privacy policy</label>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <a href="index.html" class="logo-container">
+                    <img src="images/logo.png" alt="ARLinks Logo" style="height: 35px;">
+                </a>
+                <p>Connecting you to the world with affordable, premium flights. Fly safely, travel comfortably.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-icon" aria-label="Linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon" aria-label="Youtube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="explore.html">Travel</a></li>
+                    <li><a href="opportunities.html">Opportunities</a></li>
+                    <li><a href="engagement.html">Engagement</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h5>Opportunities</h5>
+                <ul>
+                    <li><a href="opportunities.html#careers">Careers</a></li>
+                    <li><a href="opportunities.html#invest">Investor Relations</a></li>
+                    <li><a href="opportunities.html#partnerships">Partnerships</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h5>Services</h5>
+                <ul>
+                    <li><a href="service.html#flight-booking">Flight Booking</a></li>
+                    <li><a href="service.html#hotel-reservations">Hotel Booking</a></li>
+                    <li><a href="service.html#travel-insurance">Travel Insurance</a></li>
+                    <li><a href="service.html#airport-transfers">Airport Transfers</a></li>
+                    <li><a href="service.html#holiday-packages">Holiday Packages</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h5>Support</h5>
+                <ul>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="contact.html#faq">Help &amp; FAQs</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col" style="grid-column: span 1;">
+                <h5>Contact Us</h5>
+                <ul class="contact-info">
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+234 800 123 4567</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>support@arlinks.com</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Airport Road, Ikeja, Lagos, Nigeria</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 ARLinks. All rights reserved.</p>
+            <p>Designed with excellence for a seamless traveler experience.</p>
+        </div>
+    </footer>
+
+    <script src="animations.js"></script>
+    <script>
+        // Enquiry Tab Switching
+        document.querySelectorAll('.enquiry-tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                document.querySelectorAll('.enquiry-tab').forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+                document.getElementById('enquiry-type').value = tab.getAttribute('data-enquiry');
+                // Update subject placeholder based on type
+                const placeholders = {
+                    general: 'How can we help you?',
+                    booking: 'Booking reference or flight details...',
+                    partnership: 'Partnership or collaboration enquiry...',
+                    career: 'Role you are applying for...',
+                    investor: 'Investment enquiry — please share context...'
+                };
+                const subjectInput = document.getElementById('contact-subject');
+                subjectInput.placeholder = placeholders[tab.getAttribute('data-enquiry')];
+            });
+        });
+
+        // Form Submission Mock
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const btn = document.querySelector('.contact-submit-btn');
+            const text = document.getElementById('submit-text');
+            const icon = document.getElementById('submit-icon');
+            btn.disabled = true;
+            text.textContent = 'Sending...';
+            icon.className = 'fa-solid fa-spinner fa-spin';
+            setTimeout(() => {
+                document.getElementById('contact-form').style.display = 'none';
+                document.getElementById('form-success').style.display = 'flex';
+            }, 1500);
+        }
+
+        // FAQ Accordion
+        function toggleFaq(btn) {
+            const item = btn.closest('.faq-item');
+            const isOpen = item.classList.contains('open');
+            document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+            if (!isOpen) item.classList.add('open');
+        }
+    </script>
+</body>
+</html>

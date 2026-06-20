@@ -4,12 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - AirLinks</title>
+    <title>About Us - ARLinks</title>
+    <meta name="description" content="Learn about ARLink28 — a premium African aviation brand connecting people, destinations, and dreams across the continent and globally.">
     <!-- FontAwesome for Premium Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="animations.css">
 </head>
 
 <body>
@@ -17,20 +19,20 @@
     <!-- Header / Navigation Bar -->
     <header id="main-header">
         <a href="index.html" class="logo-container">
-            <img src="images/logo.png" alt="AirLinks Logo" id="header-logo">
+            <img src="images/logo.png" alt="ARLinks Logo" id="header-logo">
         </a>
         <nav id="nav-menu">
-            <a href="index.html#home">Home</a>
+            <a href="index.html">Home</a>
             <a href="about.html" class="active">About</a>
             <a href="service.html">Services</a>
-            <a href="explore.html">Explore Flight</a>
-            <a href="index.html#blog">Travel</a>
-            <a href="index.html#contact">Engagement</a>
+            <a href="explore.html">Travel</a>
+            <a href="opportunities.html">Opportunities</a>
+            <a href="engagement.html">Engagement</a>
         </nav>
         <div class="nav-actions">
             <button class="icon-btn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
             <button class="icon-btn" aria-label="Language"><i class="fa-solid fa-globe"></i></button>
-            <a href="index.html#register" class="btn btn-primary" id="header-register-btn">Contact Us</a>
+            <a href="contact.html" class="btn btn-primary" id="header-register-btn">Contact Us</a>
             <button class="mobile-menu-toggle" id="menu-toggle-btn" aria-label="Toggle Menu">
                 <i class="fa-solid fa-bars"></i>
             </button>
@@ -43,13 +45,13 @@
     <!-- About Hero Section -->
     <section class="about-hero">
         <div class="about-hero-content">
-            <span class="about-hero-tag"><i class="fa-solid fa-circle"
+            <span class="about-hero-tag hero-tag-entrance"><i class="fa-solid fa-circle"
                     style="font-size: 8px; color: var(--primary-red); margin-right: 8px;"></i> About ARLink28</span>
-            <h1>Connecting People<br><span class="highlight-red">connecting Destinations</span><br>connecting Dreams
+            <h1 class="hero-h1-entrance">Connecting People<br><span class="highlight-red">connecting Destinations</span><br>connecting Dreams
             </h1>
-            <p>A platform built to simplify travel resources within the continent, across Africa with clarity,
+            <p class="hero-p-entrance">A platform built to simplify travel resources within the continent, across Africa with clarity,
                 precision, and long-term commitment.</p>
-            <div class="about-hero-actions">
+            <div class="about-hero-actions hero-btn-entrance">
                 <a href="#about" class="btn btn-primary">Discover Us</a>
                 <a href="#" class="btn btn-secondary"><i class="fa-solid fa-play"></i> Watch our story</a>
             </div>
@@ -60,7 +62,7 @@
     <section class="about-section" id="about">
         <!-- Part 1: Who We Are -->
         <div class="about-who-we-are">
-            <div class="about-text-content">
+            <div class="about-text-content reveal-left">
                 <div class="about-tag-row">
                     <span class="about-tag">Who we are</span>
                     <span class="about-tag-line"></span>
@@ -75,20 +77,20 @@
                     global Net Zero ambitions through fuel-efficient aircraft, sustainable aviation fuels, and
                     operational strategies that reduce environmental impact over time.</p>
                 <div class="about-actions">
-                    <a href="index.html#register" class="btn btn-about-primary">Get intouch</a>
-                    <a href="index.html#features" class="btn btn-about-secondary">Our service</a>
+                    <a href="index.html#register" class="btn btn-about-primary">Get in touch</a>
+                    <a href="service.html" class="btn btn-about-secondary">Our services</a>
                 </div>
             </div>
-            <div class="about-visual">
+            <div class="about-visual reveal-right">
                 <img src="images/gini2.png" alt="ARLink28 Plane at Terminal" class="about-main-img">
             </div>
         </div>
 
         <!-- Part 2: Values Cards Grid -->
         <div class="about-values-grid">
-            <div class="value-card">
+            <div class="value-card reveal">
                 <div class="value-icon-wrapper">
-                    <i class="fa-solid fa-shield"></i>
+                    <i class="fa-solid fa-bullseye"></i>
                 </div>
                 <div class="value-info">
                     <h4>Mission</h4>
@@ -96,9 +98,9 @@
                         booking experiences</p>
                 </div>
             </div>
-            <div class="value-card">
+            <div class="value-card reveal">
                 <div class="value-icon-wrapper">
-                    <i class="fa-solid fa-shield"></i>
+                    <i class="fa-solid fa-eye"></i>
                 </div>
                 <div class="value-info">
                     <h4>Vision</h4>
@@ -106,9 +108,9 @@
                         journeys globally.</p>
                 </div>
             </div>
-            <div class="value-card">
+            <div class="value-card reveal">
                 <div class="value-icon-wrapper">
-                    <i class="fa-solid fa-shield"></i>
+                    <i class="fa-solid fa-handshake"></i>
                 </div>
                 <div class="value-info">
                     <h4>Promises</h4>
@@ -116,9 +118,9 @@
                         of the way.</p>
                 </div>
             </div>
-            <div class="value-card">
+            <div class="value-card reveal">
                 <div class="value-icon-wrapper">
-                    <i class="fa-solid fa-shield"></i>
+                    <i class="fa-solid fa-star"></i>
                 </div>
                 <div class="value-info">
                     <h4>Core Value</h4>
@@ -134,7 +136,7 @@
         </div>
 
         <!-- Part 3: Trust & Stats Ribbon -->
-        <div class="about-trust-container">
+        <div class="about-trust-container reveal">
             <div class="trust-header">
                 <h3>We Build on <span class="highlight-red">Trust</span>. Driven by Passion.</h3>
                 <p>Our values and technology, helping other partners to build security. We wrap ourselves to build the
@@ -146,7 +148,7 @@
                         <i class="fa-solid fa-users"></i>
                     </div>
                     <div class="stat-content">
-                        <div class="stat-num">50,000+</div>
+                        <div class="stat-num" data-target="50,000+">50,000+</div>
                         <div class="stat-lbl">Happy Travelers</div>
                     </div>
                 </div>
@@ -155,7 +157,7 @@
                         <i class="fa-solid fa-route"></i>
                     </div>
                     <div class="stat-content">
-                        <div class="stat-num">150</div>
+                        <div class="stat-num" data-target="150">150</div>
                         <div class="stat-lbl">Destinations</div>
                     </div>
                 </div>
@@ -164,7 +166,7 @@
                         <i class="fa-solid fa-plane"></i>
                     </div>
                     <div class="stat-content">
-                        <div class="stat-num">20+</div>
+                        <div class="stat-num" data-target="20+">20+</div>
                         <div class="stat-lbl">Partner Airlines</div>
                     </div>
                 </div>
@@ -182,16 +184,16 @@
 
         <!-- Part 4: Meet the Founder -->
         <div class="about-founder-container">
-            <div class="founder-card-visual">
+            <div class="founder-card-visual reveal-left">
                 <div class="founder-image-wrapper">
                     <img src="images/pro1 1.png" alt="Ajay E. Salako" class="founder-img">
                     <div class="founder-name-tag">
                         <h4>Ajay E. Salako</h4>
-                        <p>Founder & Tech VC</p>
+                        <p>Founder &amp; Tech VC</p>
                     </div>
                 </div>
             </div>
-            <div class="founder-text-content">
+            <div class="founder-text-content reveal-right">
                 <span class="founder-section-tag">Meet The Founder</span>
                 <blockquote>"From early instinct, to field experience, to strategic vision — ARLink28 is the result of
                     that progression."</blockquote>
@@ -214,23 +216,23 @@
     <section class="partners-section">
         <h3 class="partners-title">Meet our partners</h3>
         <div class="partners-grid-row">
-            <div class="partner-item">
+            <div class="partner-item reveal">
                 <i class="fa-brands fa-microsoft"></i>
                 <span>Azure</span>
             </div>
-            <div class="partner-item">
+            <div class="partner-item reveal">
                 <i class="fa-brands fa-aws"></i>
                 <span>AWS</span>
             </div>
-            <div class="partner-item">
+            <div class="partner-item reveal">
                 <i class="fa-brands fa-java"></i>
                 <span>Java</span>
             </div>
-            <div class="partner-item">
+            <div class="partner-item reveal">
                 <i class="fa-brands fa-python"></i>
                 <span>Python</span>
             </div>
-            <div class="partner-item">
+            <div class="partner-item reveal">
                 <i class="fa-brands fa-google"></i>
                 <span>Google Cloud</span>
             </div>
@@ -239,16 +241,16 @@
 
     <!-- Part 6: Ready For Next Adventure CTA -->
     <section class="cta-adventure">
-        <div class="cta-banner">
+        <div class="cta-banner reveal-scale">
             <div class="cta-content">
                 <h2>Ready For Your <br>Next Adventure?</h2>
                 <p>Search, compare, and book flights at the best rates. Affordable travel, trusted airlines. Search
                     flights now!</p>
-                <a href="index.html#home" class="btn btn-primary">Book Flight Tickets <i
+                <a href="index.html" class="btn btn-primary">Book Flight Tickets <i
                         class="fa-solid fa-plane"></i></a>
             </div>
             <div class="cta-visual">
-                <img src="images/IMG_5238.png" alt="AirLinks Airplane Flight" class="cta-plane">
+                <img src="images/IMG_5238.png" alt="ARLinks Airplane Flight" class="cta-plane">
             </div>
         </div>
     </section>
@@ -256,14 +258,14 @@
     <!-- Part 7: Newsletter Bar -->
     <section class="newsletter-bar" id="register">
         <div class="newsletter-container">
-            <div class="newsletter-info">
+            <div class="newsletter-info reveal-left">
                 <i class="fa-regular fa-envelope-open newsletter-icon"></i>
                 <div class="newsletter-text">
                     <h4>Stay updated with our latest offers</h4>
                     <p>Subscribe to get our regular updates, special flight pricing, and promotional offers.</p>
                 </div>
             </div>
-            <div class="newsletter-form-container">
+            <div class="newsletter-form-container reveal-right">
                 <form class="newsletter-form" onsubmit="event.preventDefault();">
                     <input type="email" placeholder="Enter your email address" required
                         aria-label="Email for newsletter">
@@ -271,7 +273,7 @@
                 </form>
                 <div class="newsletter-agree">
                     <input type="checkbox" id="newsletter-check" required>
-                    <label for="newsletter-check">I agree to terms & privacy policy</label>
+                    <label for="newsletter-check">I agree to terms &amp; privacy policy</label>
                 </div>
             </div>
         </div>
@@ -282,7 +284,7 @@
         <div class="footer-top">
             <div class="footer-brand">
                 <a href="index.html" class="logo-container">
-                    <img src="images/logo.png" alt="AirLinks Logo" style="height: 35px;">
+                    <img src="images/logo.png" alt="ARLinks Logo" style="height: 35px;">
                 </a>
                 <p>Connecting you to the world with affordable, premium flights. Fly safely, travel comfortably.</p>
                 <div class="social-links">
@@ -297,22 +299,21 @@
             <div class="footer-col">
                 <h5>Quick Links</h5>
                 <ul>
-                    <li><a href="index.html#home">Home</a></li>
-                    <li><a href="service.html">Services</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="explore.html">Explore Flight</a></li>
-                    <li><a href="index.html#blog">Blog</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="explore.html">Travel</a></li>
+                    <li><a href="opportunities.html">Opportunities</a></li>
+                    <li><a href="engagement.html">Engagement</a></li>
                 </ul>
             </div>
 
             <div class="footer-col">
-                <h5>Popular Routes</h5>
+                <h5>Opportunities</h5>
                 <ul>
-                    <li><a href="index.html#destinations">Abuja Route</a></li>
-                    <li><a href="index.html#destinations">Lagos Route</a></li>
-                    <li><a href="index.html#destinations">Port Harcourt</a></li>
-                    <li><a href="index.html#destinations">Kano Route</a></li>
-                    <li><a href="index.html#destinations">London Route</a></li>
+                    <li><a href="opportunities.html#careers">Careers</a></li>
+                    <li><a href="opportunities.html#invest">Investor Relations</a></li>
+                    <li><a href="opportunities.html#partnerships">Partnerships</a></li>
                 </ul>
             </div>
 
@@ -330,8 +331,8 @@
             <div class="footer-col">
                 <h5>Support</h5>
                 <ul>
-                    <li><a href="#">Help Center</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="contact.html#faq">Help &amp; FAQs</a></li>
                     <li><a href="#">Terms of Service</a></li>
                     <li><a href="#">Privacy Policy</a></li>
                 </ul>
@@ -346,7 +347,7 @@
                     </li>
                     <li>
                         <i class="fa-solid fa-envelope"></i>
-                        <span>support@airlinks.com</span>
+                        <span>support@arlinks.com</span>
                     </li>
                     <li>
                         <i class="fa-solid fa-location-dot"></i>
@@ -357,59 +358,13 @@
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; 2026 AirLinks. All rights reserved.</p>
+            <p>&copy; 2026 ARLinks. All rights reserved.</p>
             <p>Designed with excellence for a seamless traveler experience.</p>
         </div>
     </footer>
 
-    <!-- Header scroll and mobile menu drawer logic -->
-    <script>
-        window.addEventListener('scroll', () => {
-            const header = document.getElementById('main-header');
-            if (window.scrollY > 50) {
-                header.classList.add('sticky');
-            } else {
-                header.classList.remove('sticky');
-            }
-        });
-
-        // Mobile Navigation Drawer Toggle
-        const menuToggleBtn = document.getElementById('menu-toggle-btn');
-        const navMenu = document.getElementById('nav-menu');
-        const menuOverlay = document.getElementById('menu-overlay');
-
-        if (menuToggleBtn && navMenu && menuOverlay) {
-            const toggleMenu = () => {
-                navMenu.classList.toggle('active');
-                menuOverlay.classList.toggle('active');
-
-                const icon = menuToggleBtn.querySelector('i');
-                if (icon.classList.contains('fa-bars')) {
-                    icon.classList.remove('fa-bars');
-                    icon.classList.add('fa-xmark');
-                } else {
-                    icon.classList.remove('fa-xmark');
-                    icon.classList.add('fa-bars');
-                }
-            };
-
-            menuToggleBtn.addEventListener('click', toggleMenu);
-            menuOverlay.addEventListener('click', toggleMenu);
-
-            // Close menu if a link is clicked
-            navMenu.querySelectorAll('a').forEach(link => {
-                link.addEventListener('click', () => {
-                    navMenu.classList.remove('active');
-                    menuOverlay.classList.remove('active');
-                    const icon = menuToggleBtn.querySelector('i');
-                    if (icon) {
-                        icon.classList.remove('fa-xmark');
-                        icon.classList.add('fa-bars');
-                    }
-                });
-            });
-        }
-    </script>
+    <!-- Animation Engine -->
+    <script src="animations.js"></script>
 </body>
 
 </html>
